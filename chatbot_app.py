@@ -1,12 +1,14 @@
 import streamlit as st
 def generate_response(user_input):
-    # Logique de réponse basique
+    # Logique de réponse avec un style ancien
     if "bonjour" in user_input.lower():
-        return "Bonjour! Comment puis-je vous aider aujourd'hui?"
+        return "Salut à toi, noble voyageur ! Comment puis-je te servir en ce jour ?"
     elif "comment ça va" in user_input.lower():
-        return "Je vais bien, merci! Et vous?"
+        return "Ma foi, je me porte bien, et toi, mon cher ami ?"
+    elif "quel est ton nom" in user_input.lower():
+        return "Je suis un humble serviteur des anciens, un messager des temps oubliés."
     else:
-        return "Je suis un chatbot et je n'ai pas encore appris cette réponse."
+        return "Je crains que mes savoirs ne soient limités. Peut-être puis-je t'aider d'une autre manière ?"
     
 st.title("Chatbot avec Streamlit")
 st.write("Bienvenue sur l'interface de chatbot. Posez-moi des questions !")
